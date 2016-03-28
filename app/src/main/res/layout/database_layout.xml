@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/insert_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="增" />
+
+        <Button
+            android:id="@+id/delete_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/insert_bt"
+            android:text="删" />
+
+        <Button
+            android:id="@+id/update_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delete_bt"
+            android:text="改" />
+
+        <Button
+            android:id="@+id/select_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update_bt"
+            android:text="查" />
+        
+    </RelativeLayout>
+
+</ScrollView>

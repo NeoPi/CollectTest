@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:textSize="20sp"
+        android:text="正在下载 . . ."/>
+
+    <ProgressBar
+        android:id="@+id/dialog_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_title"
+        android:max="100"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"/>
+    <TextView
+        android:id="@+id/dialog_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"/>
+
+    <TextView
+        android:id="@+id/dialog_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/progress_bar"/>
+    <View
+        android:id="@+id/dialog_line"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/dialog_progress"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/dialog_line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="暂停下载"/>
+
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/dialog_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="取消下载"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
